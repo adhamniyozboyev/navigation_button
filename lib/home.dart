@@ -12,11 +12,12 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: ListView.builder(
         itemCount: 10,
-        itemBuilder: (context, index) =>
-            ElevatedButton(onPressed: () {
-              a=index;
-              Navigator.pushNamed(context,'second');
-            }, child: Text('${index + 1}')),
+        itemBuilder: (context, index) => ElevatedButton(
+            onPressed: () {
+              a = index;
+              Navigator.pushNamed(context, 'second');
+            },
+            child: Text('${index + 1}')),
       ),
     );
   }

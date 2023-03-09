@@ -9,7 +9,11 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('${a+1}')),
+      body: Center(
+          child: Text(
+        '${a + 1}',
+        style: TextStyle(fontSize: 50),
+      )),
     );
   }
 }
